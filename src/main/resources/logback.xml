@@ -21,7 +21,7 @@
     <logger name="com.datastax.demo" level="DEBUG"/>
 
 
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
     </root>
