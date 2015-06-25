@@ -67,6 +67,8 @@ object DemoApp extends App {
   msgs.map { msg =>
     (UUID.randomUUID(), msg)
   } saveToCassandra("msgs", "msg_audit", SomeColumns("uid", "msgbody"))
+  //Print to stdout for visibility
+  msgs.print()
 
   //Start all streams...
   ssc.start()
